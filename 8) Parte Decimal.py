@@ -1,13 +1,11 @@
 #Escriba un programa que entregue la parte decimal de un número real ingresado por el usuario.
 
 
-import math 
+numero_real = float(input("Ingrese un numero real: "))
 
-numero = float(input("Ingrese un numero con decimal"))
-print("El número es: ", numero)
-parte_decimal, parte_entera = math.modf(numero)
-print("Su parte entera es {} y su parte decimal es {}".format(
-    parte_entera, parte_decimal))
+parte_decimal = numero_real % 1
+
+print("La parte decimal del numero es: ", parte_decimal)
 
 
 
